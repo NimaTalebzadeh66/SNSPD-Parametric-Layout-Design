@@ -1,0 +1,17 @@
+# Python virtual environments and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated files (regenerate locally from src/)
+gds/*.gds
+gds/*.oas
+gds/*.oasis
+!gds/.gitkeep
+
+# KLayout/editor temp files
+*.bak
+*.tmp
+.idea/

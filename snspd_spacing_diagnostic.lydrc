@@ -1,0 +1,28 @@
+# KLayout Ruby DRC demonstration; not a foundry-qualified rule deck.
+# Layout contains nanowire geometry on GDS layer/datatype 2/0.
+# Assumed dimensional rules (um): width >= 0.09; spacing >= 0.08.
+
+report("SNSPD Spacing Diagnosis")
+
+nanowire = input(2, 0)
+
+nanowire.width(0.09).output(
+  "WIDTH",
+  "Width below 90 nm"
+)
+
+nanowire.isolated(0.08).output(
+  "INTER_POLYGON",
+  "Inter-polygon spacing below 80 nm"
+)
+
+# Compare two different geometric distance operators:
+nanowire.notch(0.08).output(
+  "INTRA_EUCLIDEAN",
+  "Euclidean notch spacing below 80 nm"
+)
+
+nanowire.notch(0.08, projection).output(
+  "INTRA_PROJECTED",
+  "Projected notch spacing below 80 nm"
+)
