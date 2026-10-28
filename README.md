@@ -2,7 +2,7 @@
 
 A compact **Python → parameter sweep → hierarchical GDSII → KLayout DRC** demonstration using gdsfactory. The exercise explores geometric design choices for superconducting nanowire single-photon detectors (SNSPDs), including nanowire width, pitch, and the effect of minimum-width and minimum-spacing constraints.
 
-> **Scope:** This is an educational layout-automation and verification example—not a fabricated, experimentally characterized, or foundry-qualified SNSPD. All design-rule thresholds are illustrative. No superconducting performance, optical absorption, switching-current, or yield claims are made.
+> **Scope:** In this educational layout-automation and verification example (not fabricated, & experimentally characterized, or foundry-qualified SNSPD) all design-rule thresholds are illustrative. No superconducting performance, optical absorption, switching-current, or yield claims are made.
 
 ## Workflow
 
